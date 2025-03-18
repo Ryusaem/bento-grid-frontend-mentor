@@ -11,6 +11,17 @@
   padding: 0;
 }
 
+body {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400; /* Regular */
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 500; /* Medium */
+}
+
 p {
   font-size: 18px;
 }
