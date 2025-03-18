@@ -1,7 +1,14 @@
 :root {
-  --color-base-primary: hsl(25, 97%, 53%);
-  --color-base-bg: hsl(216, 12%, 8%);
-  --color-base-text: hsl(217, 12%, 63%);
+  --color-base-bg: #f5f5f5;
+  --color-base-text--white: hsl(0, 0%, 100%);
+  --color-base-text--black: hsl(0, 0%, 7%);
+
+  --color-base-card--purple100: hsl(254, 88%, 90%);
+  --color-base-card--purple500: hsl(252, 94%, 67%);
+  --color-base-card--yellow100: hsl(31, 66%, 93%);
+  --color-base-card--yellow500: hsl(39, 100%, 71%);
+  --color-base-card--white: hsl(0, 0%, 100%);
+  --color-base-card--black: hsl(0, 0%, 7%);
 }
 
 /* --- GLOBAL RESET --- */
@@ -22,8 +29,64 @@ h3 {
   font-weight: 500; /* Medium */
 }
 
+h2 {
+  font-size: 21px;
+  font-weight: bold;
+}
+
 p {
   font-size: 18px;
+}
+
+/* --- BACKGROUND --- */
+body {
+  background-color: var(--color-base-bg);
+}
+
+.bg-purple100 {
+  background: var(--color-base-card--purple100);
+}
+
+.bg-purple500 {
+  background: var(--color-base-card--purple500);
+  color: var(--color-base-text--white);
+}
+
+.bg-yellow100 {
+  background: var(--color-base-card--yellow100);
+}
+
+.bg-yellow500 {
+  background: var(--color-base-card--yellow500);
+}
+
+.bg-white {
+  background: var(--color-base-card--white);
+}
+
+/* --- CONTAINER --- */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem 1.5rem;
+}
+
+/* Ensure the grid items have a defined size */
+.bento-grid__card {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+
+  border-radius: 10px;
+  border: 1px solid hsl(217, 12%, 63%);
+}
+
+/* For images that should scale within the grid item */
+.bento-grid__card img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* --- FOOTER --- */
