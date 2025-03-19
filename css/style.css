@@ -123,17 +123,44 @@ body {
   max-width: 60%;
 }
 
+/* Image styles within cards 3 */
+.bento-grid__card.three {
+  padding-bottom: 0;
+  overflow: hidden;
+}
+
+/* Image styles within cards 3 */
+.bento-grid__card.three img {
+  max-width: 75%;
+  height: 115%;
+  overflow: hidden;
+}
+
 /* Card styles for card 4 */
 .bento-grid__card.four {
-  padding: 1.2rem 2.5rem;
-  gap: 2rem;
-
+  padding: 1.5rem 1rem;
+  gap: 1.2rem;
   text-align: center;
 }
 
-/* Centering everything in card TWO */
+/* Centering everything in card 4 */
 .bento-grid__card.four > * {
   place-self: center;
+}
+
+/* Centering everything in card 5 */
+.bento-grid__card.five > * {
+  place-self: center;
+  text-align: center;
+}
+
+.bento-grid__card.five h2 {
+  max-width: 65%;
+}
+
+/* Image styles within cards 5 */
+.bento-grid__card.five img {
+  max-width: 70%;
 }
 
 /* Diminishing widh of  h2 in card TWO */
